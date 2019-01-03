@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "189259132497",
+    "firebase_url": "https://sckoolmate-d1f89.firebaseio.com",
+    "project_id": "sckoolmate-d1f89",
+    "storage_bucket": "sckoolmate-d1f89.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:189259132497:android:dca408e01678156f",
+        "android_client_info": {
+          "package_name": "teeno.com.sckoolmate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "189259132497-kd2bevs5dosgoa8ef9o6cvsmm0m8a9mt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "teeno.com.sckoolmate",
+            "certificate_hash": "536df483d0bfa5a54a6d48e07868963fdc84e08c"
+          }
+        },
+        {
+          "client_id": "189259132497-tp747opggapu863ms24eh7keapclgejp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAS_HOaZdTyJNtZBAMQIqfBXoKrE5ufnX8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "189259132497-8t1nkfl3olbhtsrbkne49ugmu28bpder.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

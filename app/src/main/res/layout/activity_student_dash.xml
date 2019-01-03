@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+
+    <include
+        layout="@layout/app_bar_main2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_main2"
+        app:menu="@menu/activity_main2_drawer"
+        app:itemIconTint="@color/colorDarkGrey"
+        app:itemTextColor="@color/colorDarkGrey"
+        android:visibility="gone"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#4A235A"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_dashboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#4A235A"
+            app:theme="@style/ThemeToolbar" >
+
+            <!-- <Button
+                 android:layout_width="30dp"
+                 android:layout_height="30dp"
+                 android:layout_marginEnd="60dp"
+                 android:background="@drawable/ic_menu_black_24dp" />-->
+
+
+
+        </android.support.v7.widget.Toolbar>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="0.5">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/top_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="0.5"
+                android:elevation="60dp"
+                app:cardBackgroundColor="#4A235A">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="3dp">
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_top_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="3dp">
+
+
+
+                        <ImageView
+                            android:id="@+id/iv_top_layout"
+                            android:layout_width="55dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/ic_person_black_24dp" />
+
+                        <TextView
+                            android:id="@+id/tv_top_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="student Name"
+                            android:textColor="#FFFFFF"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/tv_galleryDash4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="School Name"
+                            android:textColor="#FFFFFF"
+                            android:textSize="10sp"
+                            android:padding="5dp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/tv_galleryDash3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Class and section"
+                            android:textColor="#FFFFFF"
+                            android:textSize="10sp"
+                            android:padding="5dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+           android:layout_margin="2dp"
+            android:layout_weight="0.5">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_galleryDash"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="0.5"
+                        android:elevation="60dp">
+
+                        <LinearLayout
+                            android:id="@+id/ll_galleryDash"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="3dp">
+
+                            <ImageView
+                                android:id="@+id/iv_galleryDash"
+                                android:layout_width="75dp"
+                                android:layout_height="50dp"
+                                />/ android:src="@drawable/download" />
+
+                            <TextView
+                                android:id="@+id/tv_galleryDash"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Download Center"
+                                android:textColor="#263238"
+                                android:textSize="8sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_galleryDash2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="0.5"
+                        android:elevation="60dp">
+
+                        <LinearLayout
+                            android:id="@+id/ll_galleryDash2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="3dp">
+
+                            <ImageView
+                                android:id="@+id/iv_galleryDash2"
+                                android:layout_width="75dp"
+                                android:layout_height="50dp"
+                                />/ android:src="@drawable/download" />
+
+                            <TextView
+                                android:id="@+id/tv_galleryDash2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Download Center"
+                                android:textColor="#263238"
+                                android:textSize="8sp"
+                                android:padding="2dp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_notificationDash"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="0.5"
+                        android:elevation="60dp">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+                            <LinearLayout
+                                android:id="@+id/ll_notificationDash"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="3dp">
+
+                                <ImageView
+                                    android:id="@+id/iv_notificationDash"
+                                    android:layout_width="75dp"
+                                    android:layout_height="50dp"
+                                    />/   android:src="@drawable/notification" />
+
+                                <TextView
+                                    android:id="@+id/tv_notificationDash"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Notice Board"
+                                    android:textColor="#263238"
+                                    android:textSize="10sp"
+                                    android:padding="2dp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_notificationDash2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="0.5"
+                        android:elevation="60dp">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+                            <LinearLayout
+                                android:id="@+id/ll_notificationDash2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:padding="3dp">
+
+                                <ImageView
+                                    android:id="@+id/iv_notificationDash2"
+                                    android:layout_width="75dp"
+                                    android:layout_height="50dp"
+                                    />/   android:src="@drawable/notification" />
+
+                                <TextView
+                                    android:id="@+id/tv_notificationDash2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Notice Board"
+                                    android:textColor="#263238"
+                                    android:textSize="10sp"
+                                    android:padding="2dp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="4dp"
+            android:layout_weight="0.7">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_attendanceDash"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="0.5"
+                android:elevation="60dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/ll_attendanceDash"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/iv_attendanceDash"
+                            android:layout_width="75dp"
+                            android:layout_height="70dp"
+                            />/  android:src="@drawable/attendance_icon_new" />
+
+                        <TextView
+                            android:id="@+id/tv_attendanceDash"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Attendance"
+                            android:textColor="#263238"
+                            android:textSize="10sp"
+                            android:padding="2dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_homeworkDash"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="0.5"
+                android:elevation="60dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_homeworkDash"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/iv_homeworkDash"
+                            android:layout_width="75dp"
+                            android:layout_height="70dp"
+                            />/ android:src="@drawable/homework_icon" />
+
+                        <TextView
+                            android:id="@+id/tv_homeworkDash"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Home Work"
+                            android:textColor="#263238"
+                            android:textSize="12sp"
+                            android:padding="5dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_attendanceDash1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="0.5"
+                android:elevation="60dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_attendanceDash1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/iv_attendanceDash1"
+                            android:layout_width="75dp"
+                            android:layout_height="70dp"
+                            />/  android:src="@drawable/attendance_icon_new" />
+
+                        <TextView
+                            android:id="@+id/tv_attendanceDash1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Attendance"
+                            android:textColor="#263238"
+                            android:textSize="12sp"
+                            android:padding="5dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="4dp"
+            android:layout_weight="0.7">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_feesDash"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="0.4"
+                android:elevation="60dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_feesDash"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/iv_feesDash"
+                            android:layout_width="75dp"
+                            android:layout_height="70dp"
+                            />/  android:src="@drawable/transport_icon" />
+
+                        <TextView
+                            android:id="@+id/tv_feesDash"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Transport"
+                            android:textColor="#263238"
+                            android:textSize="10sp"
+                            android:padding="2dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_resultDash"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="0.4"
+                android:elevation="60dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/ll_resultDash"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="5dp"
+                        >
+
+                        <ImageView
+                            android:id="@+id/iv_resultDash"
+                            android:layout_width="75dp"
+                            android:layout_height="70dp"
+                            />/  android:src="@drawable/results_icon" />
+
+                        <TextView
+                            android:id="@+id/tv_resultDash"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Result"
+                            android:textColor="#263238"
+                            android:textSize="12sp"
+                            android:padding="2dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_feesDash1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="0.4"
+                android:elevation="60dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/ll_feesDash1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/iv_feesDash1"
+                            android:layout_width="75dp"
+                            android:layout_height="70dp"
+                            />/  android:src="@drawable/transport_icon" />
+
+                        <TextView
+                            android:id="@+id/tv_feesDash1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Transport"
+                            android:textColor="#263238"
+                            android:textSize="10sp"
+                            android:padding="2dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>
