@@ -180,7 +180,7 @@ public class SchoolDetails extends AppCompatActivity implements AdapterView.OnIt
                 }
                 Log.d("Student dashboard","Student dashboard");
 
-                Intent i = new Intent(this, StudentDash.class);
+                Intent i = new Intent(this, Dash.class);
                 startActivity(i);
 
             }
